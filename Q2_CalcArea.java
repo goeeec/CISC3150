@@ -14,8 +14,8 @@ public class Q2_CalcArea
 			if (radius <= 0)
 				System.err.println("Please enter positive number");
 			else
-				System.out.println("Circle's area: " 
-				+ (Math.pow(radius, 2) * Math.PI));
+				System.out.format("Circle's area: %.3f\n",
+				(Math.pow(radius, 2) * Math.PI));
 			System.out.println("Please enter radius");
 		}
 	}
