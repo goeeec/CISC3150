@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Q3_randomMonth
+public class Q3_RandomMonth
 {
 	public static void main(String[] args)
 	{

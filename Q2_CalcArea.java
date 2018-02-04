@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Q2_calcArea
+public class Q2_CalcArea
 {
 	public static void main(String[] args)
 	{
