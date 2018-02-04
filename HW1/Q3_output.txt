@@ -1,0 +1,37 @@
+Script started on Sun Feb  4 16:22:27 2018
+[?1034hbash-3.2$ java Q3_RandomMonth.[K
+June
+bash-3.2$ java Q3_RandomMonth
+May
+bash-3.2$ java Q3_RandomMonth
+February
+bash-3.2$ java Q3_RandomMonth
+August
+bash-3.2$ java Q3_RandomMonth
+May
+bash-3.2$ java Q3_RandomMonth
+August
+bash-3.2$ java Q3_RandomMonth
+August
+bash-3.2$ java Q3_RandomMonth
+June
+bash-3.2$ java Q3_RandomMonth
+September
+bash-3.2$ java Q3_RandomMonth
+November
+bash-3.2$ java Q3_RandomMonth
+July
+bash-3.2$ java Q3_RandomMonth
+February
+bash-3.2$ java Q3_RandomMonth
+August
+bash-3.2$ java Q3_RandomMonth
+August
+bash-3.2$ java Q3_RandomMonth
+December
+bash-3.2$ java Q3_RandomMonth
+May
+bash-3.2$ exit
+exit
+
+Script done on Sun Feb  4 16:22:47 2018
