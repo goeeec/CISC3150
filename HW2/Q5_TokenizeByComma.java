@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Q4_TokenizeByComma
+public class Q5_TokenizeByComma
 {
 	public static void main(String[] args)
 	{
