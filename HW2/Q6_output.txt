@@ -1,0 +1,62 @@
+Script started on Fri Feb  9 23:11:43 2018
+[?1034hbash-3.2$ java q[KQ6_TokenizeCharacters.[K
+Please enter string for tokenization of characters
+dfdjghjfkdjgfhjk
+d
+f
+d
+j
+g
+h
+j
+f
+k
+d
+j
+g
+f
+h
+j
+k
+
+
+^Dbash-3.2$ java Q6_TokenizeCharacters
+Please enter string for tokenization of characters
+hjksd sjdhfg   uertryuireturhjk
+h
+j
+k
+s
+d
+ 
+s
+j
+d
+h
+f
+g
+ 
+ 
+ 
+u
+e
+r
+t
+r
+y
+u
+i
+r
+e
+t
+u
+r
+h
+j
+k
+
+
+^Dbash-3.2$ exit
+exit
+
+Script done on Fri Feb  9 23:12:09 2018

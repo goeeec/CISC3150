@@ -1,0 +1,21 @@
+Script started on Fri Feb  9 23:09:47 2018
+[?1034hbash-3.2$ java Q3_CheckPalindrome.[K
+Please enter a string
+abbbba
+This IS a palindrome
+bash-3.2$ java Q3_CheckPalindromeacb[K[K[K
+Please enter a string
+abd
+This is NOT a palindrome
+bash-3.2$ java Q3_CheckPalindrome
+Please enter a string
+AbBa
+This is NOT a palindrome
+bash-3.2$ java Q3_CheckPalindrome
+Please enter a string
+abcba
+This IS a palindrome
+bash-3.2$ exit
+exit
+
+Script done on Fri Feb  9 23:10:19 2018

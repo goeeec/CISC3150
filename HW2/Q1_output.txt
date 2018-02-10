@@ -1,0 +1,31 @@
+Script started on Fri Feb  9 23:07:52 2018
+[?1034hbash-3.2$ java Q1_Pyramid
+Please enter the height of the pyramid
+4
+Here is the pyramid with height: 4
+      1 
+    1 2 1 
+  1 2 3 2 1 
+1 2 3 4 3 2 1 
+bash-3.2$ java Q1_Pyramid
+Please enter the height of the pyramid
+0
+Here is the pyramid with height: 0
+bash-3.2$ java Q1_Pyramid
+Please enter the height of the pyramid
+-2
+Here is the pyramid with height: -2
+bash-3.2$ java Q1_Pyramid
+Please enter the height of the pyramid
+6
+Here is the pyramid with height: 6
+          1 
+        1 2 1 
+      1 2 3 2 1 
+    1 2 3 4 3 2 1 
+  1 2 3 4 5 4 3 2 1 
+1 2 3 4 5 6 5 4 3 2 1 
+bash-3.2$ r[Kexit
+exit
+
+Script done on Fri Feb  9 23:08:30 2018

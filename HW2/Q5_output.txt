@@ -1,0 +1,18 @@
+Script started on Fri Feb  9 23:10:45 2018
+[?1034hbash-3.2$ java Q5_TokenizeByComma.[K
+Please enter string separated by comma for tokenization
+asdfdg  sd, asdfd, dser,
+asdfdg  sd
+ asdfd
+ dser
+sss,   ,sdwqe,
+
+sss
+   
+sdwqe
+^D
+
+bash-3.2$ exit
+exit
+
+Script done on Fri Feb  9 23:11:14 2018
