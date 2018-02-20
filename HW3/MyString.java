@@ -1,17 +1,3 @@
-/*
-public MyString(char[] chars);
-public char charAt(int index);
-public int length();
-public MyString substring(int begin, int end);
-public MyString toLowerCase();
-public MyString toUpperCase();
-public boolean equals(MyString s);
-public MyString getMyString();
-public String toString();
-public static MyString valueOf(int i);
-*/
-
-
 public final class MyString
 {
 	private final char[] chars;
@@ -128,20 +114,4 @@ public final class MyString
 			result[0] = '-';
 		return (new MyString(result));
 	}
-/*
-	public static void main(String[] args)
-	{
-		char[] chars = {'H', 'e', 'l', 'l', 'o', 'h', 'e', 'l', 'o'};
-		char[] chars2 = {'H', 'e', 'L', 'L', 'o'};
-		MyString mystr = new MyString(chars);
-		MyString mystr2 = new MyString(chars2);
-		String	result;
-
-		//result = MyString.valueOf(Integer.MAX_VALUE).toString();
-		//result = mystr.toUpperCase().toString();
-		result = mystr2.toLowerCase().toString();
-		//result = mystr.substring(3, 3).toString();
-		System.out.println(result);
-		//System.out.println(mystr.equals(mystr2));
-	}*/
 }
