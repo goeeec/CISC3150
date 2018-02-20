@@ -1,0 +1,16 @@
+Script started on Mon Feb 19 19:59:16 2018
+[?1034hbash-3.2$ java Main
+charAt(int index): l
+length(): 10
+substring(int begin, int end): lohel
+toLowerCase(): hello
+toUpperCase(): HELLOHELLO
+equals(MyString s): false
+getMyString(): Hellohello
+toString(): Hellohello
+valueOf(int i): 2335
+valueOf(int i ): -111334
+bash-3.2$ exit
+exit
+
+Script done on Mon Feb 19 19:59:26 2018
