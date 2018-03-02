@@ -1,0 +1,44 @@
+1a)
+Output: "Woof, woof, woof!"
+Method called: String call(int k) in Dog
+Example of overloading, same method name but different parameters 
+
+1b)
+Output: "I'm a cat, go away!"
+Method called: String toString() in Cat
+Example of overriding, Cat method overriding toString() method from Object
+
+1c)
+Output: compile error
+Method called: no method called
+Because the call() method does not exist in the Object class, so this won't be compiled
+
+1d)
+Output: random string
+Method called: method from Object class
+Cause there are no toString() methods in Pet class, so the toString() method will be called using the one from Object
+
+1e)
+Output: "woof!"
+Method called: call() method in Dog
+Example of overriding and overloading
+
+1f)
+Output: "Come here, kitty? ... Don't waste my time."
+Method called: toString(String b) method in Cat
+Example of overloading
+
+1g)
+Output: compile error
+Method called: no method called
+There is no such call(int) function in Cat class, so this does not compile
+
+1h)
+Output: "four"
+Method called: feet() in Pet class
+Though there is no feet() methods in Dog, but it is extended from Pet which inherited feet() method to Dog
+
+1i)
+Output: compile error
+Method called: no method called
+At compile time, compiler looks inside the declare type, Pet, where there is not method of call(int), so this will not compile
