@@ -1,0 +1,11 @@
+Script started on Wed Mar  7 22:17:25 2018
+[?1034hbash-3.2$ java Q1_FindPi
+Estimated PI: 3.141545645
+390587
+bash-3.2$ java Q1_FindPiMultiThread.[K
+Estimated PI: 3.141593592
+10726
+bash-3.2$ exit
+exit
+
+Script done on Wed Mar  7 22:24:25 2018
