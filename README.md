@@ -1,27 +1,17 @@
 # CISC3150
 HW1:
-- Q2
-  - Circle area calculator
-- Q3
-  - Random month generator
-- Q4
-  - File reader
-- Q5
-  - Triangle validator
-- Q6
-  - Determining the relationship between two circles
+- Q2: Circle area calculator
+- Q3: Random month generator
+- Q4: File reader
+- Q5: Triangle validator
+- Q6: Determining the relationship between two circles
 
 HW2:
-- Q1
-  - Printing pyramid with given levels
-- Q2
-  - Printing calendar with given year
-- Q3
-  - Palindrome checker
-- Q5
-  - Tokenize string by comma
-- Q6
-  - Tokenize string by char
+- Q1: Printing pyramid with given levels
+- Q2: Printing calendar with given year
+- Q3: Palindrome checker
+- Q5: Tokenize string by comma
+- Q6: Tokenize string by char
 
 HW3:
 - Implementation of String class
