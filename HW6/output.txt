@@ -1,0 +1,86 @@
+Script started on Wed Mar 14 23:46:14 2018
+[?1034hbash-3.2$ java NQueen 1
+1
+All possible solution(s): 1
+bash-3.2$ java NQueen 1[K4
+0 1 0 0 
+0 0 0 1 
+1 0 0 0 
+0 0 1 0 
+
+0 0 1 0 
+1 0 0 0 
+0 0 0 1 
+0 1 0 0 
+
+All possible solution(s): 2
+bash-3.2$ java NQueen 4[K3
+No solutions for this size
+bash-3.2$ java NQueen 3-1[K[K[K-1
+No solutions for this size
+bash-3.2$ java NQueen -1[K[K5
+1 0 0 0 0 
+0 0 1 0 0 
+0 0 0 0 1 
+0 1 0 0 0 
+0 0 0 1 0 
+
+1 0 0 0 0 
+0 0 0 1 0 
+0 1 0 0 0 
+0 0 0 0 1 
+0 0 1 0 0 
+
+0 1 0 0 0 
+0 0 0 1 0 
+1 0 0 0 0 
+0 0 1 0 0 
+0 0 0 0 1 
+
+0 1 0 0 0 
+0 0 0 0 1 
+0 0 1 0 0 
+1 0 0 0 0 
+0 0 0 1 0 
+
+0 0 1 0 0 
+1 0 0 0 0 
+0 0 0 1 0 
+0 1 0 0 0 
+0 0 0 0 1 
+
+0 0 1 0 0 
+0 0 0 0 1 
+0 1 0 0 0 
+0 0 0 1 0 
+1 0 0 0 0 
+
+0 0 0 1 0 
+1 0 0 0 0 
+0 0 1 0 0 
+0 0 0 0 1 
+0 1 0 0 0 
+
+0 0 0 1 0 
+0 1 0 0 0 
+0 0 0 0 1 
+0 0 1 0 0 
+1 0 0 0 0 
+
+0 0 0 0 1 
+0 1 0 0 0 
+0 0 0 1 0 
+1 0 0 0 0 
+0 0 1 0 0 
+
+0 0 0 0 1 
+0 0 1 0 0 
+1 0 0 0 0 
+0 0 0 1 0 
+0 1 0 0 0 
+
+All possible solution(s): 10
+bash-3.2$ exit
+exit
+
+Script done on Wed Mar 14 23:46:37 2018
