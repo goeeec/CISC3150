@@ -1,23 +1,23 @@
 import java.util.*;
-import java.lang.Exception;
-// testing: \( 1 + 2 \) "*" 3 + 4 "/" \( 5 + 6 "*" 7 \) - 8
 
 public class Calculator {
 	public static void main(String[] args) throws Throwable{
 		String expr;
 
 		try {
+			if (args.length == 0)
+				throw new UserIsADumbassException();
 			expr = toPostfix(args);
 			double res = evaluateExpression(expr);
 			System.out.printf("Result: %.3f\n", res);
 		} catch(ArithmeticException ae) {
 			System.out.println("Cannot divide by zero");
 		} catch(AlgebraFailException afe) {
-			System.out.println("Please enter a valid expression");
+			System.out.println("Non-number appearing at a position that is supposed to be numbers");
 		} catch(QuitMashingOnYourKeyboardException qe) {
 			System.out.println("Please enter valid operator");
 		} catch(UserIsADumbassException ue) {
-			System.out.println("Please enter numbers");
+			System.out.println("No arguments entered");
 		}
 	}
 
@@ -25,30 +25,31 @@ public class Calculator {
 		StringBuilder output = new StringBuilder();
 		Stack<Character> operator = new Stack<Character>();
 
-		int count = 0;
+		int count = 0; // counter to count numbers and operators only
 
 		for (String s : args) {
-			// should be number for every other argument
-			if (count % 2 == 0) {
+			char op = s.charAt(0);
+
+			if (op == '(') {
+				operator.push(op);
+			} else if (op == ')') { // if closing, pop all operator until it meets the opening
+				while (operator.peek() != '(') {
+					output.append(operator.pop());
+					output.append(' ');
+				}
+				// pop out the opening (
+				operator.pop();
+			} else if (count % 2 == 0) { // should be number for every other argument
 				// check if current argument is a number
 				if (isNumeric(s)) {
 					output.append(s);
 					output.append(' ');
+					count++;
 				} else {
 					throw new AlgebraFailException();
 				}
 			} else { // this part should be either parentheses or operators
-				char op = s.charAt(0);
-				if (op == '(') {
-					operator.push(op);
-				} else if (op == ')') { // if closing, pop all operator until it meets the opening
-					while (operator.peek() != '(') {
-						output.append(operator.pop());
-						output.append(' ');
-					}
-					// pop out the opening (
-					operator.pop();
-				} else if (isOperator(op)) { // check if current argument is operator
+				 if (isOperator(op)) { // check if current argument is operator
 					// while operator stack is not empty
 					while (!operator.isEmpty()) {
 						char topOp = operator.peek();
@@ -59,12 +60,13 @@ public class Calculator {
 							|| (getPrecedence(topOp) == getPrecedence(op) && op != '^')) {
 							output.append(operator.pop());
 							output.append(' ');
-							//System.out.printf("Popped: %c\n", topOp);
 						} else
 							break;
 					}
 					operator.push(op);
-					//System.out.printf("Pushed: %c\n", op);
+					count++;
+				} else {
+					throw new QuitMashingOnYourKeyboardException();
 				}
 			}
 		}
