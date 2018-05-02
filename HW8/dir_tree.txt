@@ -62,6 +62,7 @@
 │   └───Q4_ReadAndPrint.java
 ├───HW8
 │   ├───Tree.java
+│   ├───dir_tree.txt
 │   ├───dir2
 │   │   └───txt4.txt
 │   ├───Tree.class
@@ -87,6 +88,8 @@
     ├───ORIG_HEAD
     ├───config
     ├───objects
+    │   ├───61
+    │   │   └───b64cf89cc7143cb93f4c92955fa1e12ff3d8d1
     │   ├───0d
     │   │   └───2bc9a2c436c792c4494c3631db526d3aa8211b
     │   ├───59
@@ -161,6 +164,8 @@
     │   │   └───32a401d905061aca90f670ed02af684ef946de
     │   ├───fd
     │   │   └───d2ae13af54b48fe05a23202bead195db414fa1
+    │   ├───f5
+    │   │   └───b53b597c1c2fe81dbf8f6b5ab67dc4f97c425d
     │   ├───e3
     │   │   └───d1948123017107efa60f14fd6039ddab0ccf92
     │   ├───ca
@@ -240,7 +245,8 @@
     │   ├───96
     │   │   └───892e3b08b21cd2810e6644edd6e60da853489a
     │   ├───3a
-    │   │   └───adb1ecbffd6f38d9f11d4beb070e20056c009d
+    │   │   ├───adb1ecbffd6f38d9f11d4beb070e20056c009d
+    │   │   └───9619849620063acb752f219451e6c2e20ddf42
     │   ├───54
     │   │   └───eaaaecf30ddd3a8a71d495df92192a1df4111f
     │   ├───98
@@ -249,6 +255,8 @@
     │   │   └───95b64251e13c196a4a877acde18cd79b44bc5d
     │   ├───5e
     │   │   └───f4928871b553a612eb36a16c274e2ea80e006e
+    │   ├───5b
+    │   │   └───2fe99722ad3c0d7ec8c5d5cabe3ecf333c9fb3
     │   ├───08
     │   │   └───fdcaf37842b7cac1e71083a41f0c377ada60fa
     │   ├───01
@@ -418,5 +426,3 @@
     ├───index
     ├───COMMIT_EDITMSG
     └───FETCH_HEAD
-
-Given path: /Users/jching/Desktop/Spring 2018/oop3150/cisc3150/

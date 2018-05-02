@@ -11,7 +11,9 @@ public class Tree {
     public static void main(String[] args) {
         ArrayList<Boolean> isLastDir = new ArrayList<>();
         try {
-            printFileTree(new File(args[0]), 0, isLastDir);
+            PrintWriter output = new PrintWriter("dir_tree.txt");
+            printFileTree(output, new File(args[0]), 0, isLastDir);
+            output.close();
         } catch(Throwable t) {
             System.err.println(t);
         } finally {
@@ -20,7 +22,7 @@ public class Tree {
         }
     }
 
-    public static void printFileTree(File root, int level, ArrayList<Boolean> isLastDir) {
+    public static void printFileTree(PrintWriter fo, File root, int level, ArrayList<Boolean> isLastDir) {
         File[] filesList = root.listFiles();
 
         for (int i = 0; i < filesList.length; i++) {
@@ -28,28 +30,36 @@ public class Tree {
             for (int j = 0; j < level; j++)
                 // print starting from level 0 (from left to right)
                 // if that level is the last directory, print empty spaces
-                if (isLastDir.get(j))
-                    System.out.print("    ");
-                else
-                    System.out.print(a179 + "   ");
+                if (isLastDir.get(j)) {
+                    //System.out.print("    ");
+                    fo.print("    ");
+                } else {
+                    //System.out.print(a179 + "   ");
+                    fo.print(a179 + "   ");
+                }
             
             // to print the stem, either ├ or └
-            if (i == filesList.length - 1)
-                System.out.print(a192);
-            else
-                System.out.print(a195);
+            if (i == filesList.length - 1) {
+                //System.out.print(a192);
+                fo.print(a192);
+            } else {
+                //System.out.print(a195);
+                fo.print(a195);
+            }
 
             // to list all files
             if (filesList[i].isFile()) {
-                System.out.printf("%s%s\n", a196, filesList[i].getName());
+                //System.out.printf("%s%s\n", a196, filesList[i].getName());
+                fo.printf("%s%s\n", a196, filesList[i].getName());
             } else if (filesList[i].isDirectory()) {
-                System.out.printf("%s%s\n", a196, filesList[i].getName());
+                //System.out.printf("%s%s\n", a196, filesList[i].getName());
+                fo.printf("%s%s\n", a196, filesList[i].getName());
 
                 // keep track to see if the current directory is the last file in the current level
                 isLastDir.add((i == filesList.length - 1));
 
                 // recursive call to print tree in current directory
-                printFileTree(filesList[i], level + 1, isLastDir);
+                printFileTree(fo, filesList[i], level + 1, isLastDir);
 
                 // remove the last boolean after finishing that directory
                 isLastDir.remove(isLastDir.size() - 1);
