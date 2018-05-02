@@ -24,3 +24,9 @@ HW5:
 
 HW6:
 - Solving N-Queens problem
+
+HW7:
+- Command line calculator (output not included)
+
+HW8:
+- Implementation of Linux command: tree
