@@ -1,0 +1,8 @@
+The program crashes because the intance variable - product is not locked.
+The method notifyAll() and wait() should have the object locked in order 
+to be used. When the notifyAll() method is called, all the threads on wait 
+are waken up, and once any of them want to access product, it crashed 
+because product is possible to be modified at the same time, which causes
+data corruption. To fix this problem, synchronized block should be used to
+wrap around the statements to modify product and call notifyAll method.
+This way, only one thread at a time can have access to modify product.
