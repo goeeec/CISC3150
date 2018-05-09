@@ -6,3 +6,8 @@ because product is possible to be modified at the same time, which causes
 data corruption. To fix this problem, synchronized block should be used to
 wrap around the statements to modify product and call notifyAll method.
 This way, only one thread at a time can have access to modify product.
+
+Reference:
+https://www.journaldev.com/1037/java-thread-wait-notify-and-notifyall-example
+http://javarevisited.blogspot.com/2011/04/synchronization-in-java-synchronized.html
+http://tutorials.jenkov.com/java-concurrency/synchronized.html
