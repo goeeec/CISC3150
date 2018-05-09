@@ -1,4 +1,4 @@
-The program crashes because the intance variable - product is not locked.
+The program crashes because the instance variable - product is not locked.
 The method notifyAll() and wait() should have the object locked in order 
 to be used. When the notifyAll() method is called, all the threads on wait 
 are waken up, and once any of them want to access product, it crashed 
