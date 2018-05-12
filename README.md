@@ -30,3 +30,9 @@ HW7:
 
 HW8:
 - Implementation of Linux command: tree
+
+HW9:
+- Explaining why synchronized is needed in producer-consumer example
+
+HW10:
+- Print alphabet in correct order using multithreading
